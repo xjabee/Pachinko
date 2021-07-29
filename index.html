@@ -10,8 +10,9 @@
 </head>
 
 <body>
+
   <div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width=960 height=600></canvas>
+    <canvas id="unity-canvas" width=480 height=800></canvas>
     <div id="unity-loading-bar">
       <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
@@ -20,21 +21,12 @@
     </div>
     <div id="unity-warning"> </div>
     <div id="unity-footer">
-      <div id="unity-webgl-logo"></div>
+
       <div id="unity-fullscreen-button"></div>
       <div id="unity-build-title">Ballz</div>
     </div>
   </div>
-  <a href="https://twitter.com/xJabee">
-    <img src="https://utilitypeopleuk.com/wp-content/uploads/2017/06/twitter-icon-circle-blue-logo-preview.png" alt=""
-      width="96">
-  </a>
-  <a href="https://twitch.tv/xjabee">
-    <img src="https://www.tailorbrands.com/wp-content/uploads/2021/04/twitch-logo.png" alt="" width="85">
-  </a>
-  <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-  <script
-    type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'M4M6M5M3'); kofiwidget2.draw();</script>
+
   <script>
     var container = document.querySelector("#unity-container");
     var canvas = document.querySelector("#unity-canvas");
@@ -107,8 +99,8 @@
     } else {
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-      canvas.style.width = "960px";
-      canvas.style.height = "600px";
+      canvas.style.width = "480px";
+      canvas.style.height = "800px";
     }
 
     loadingBar.style.display = "block";
@@ -128,6 +120,15 @@
       });
     };
     document.body.appendChild(script);
+  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('xjabee', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#323842',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
   </script>
 </body>
 
